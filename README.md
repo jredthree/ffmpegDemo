@@ -104,6 +104,7 @@ build_android.sh的内容如下
 根据头文件名，建立相同名字才C源文件cn_dennishucd_FFmpegNative.c
 以上的文件在jni文件夹中
 .c文件的主要内容为：
+```
     JNIEXPORT jint JNICALL Java_cn_dennishucd_FFmpegNative_avcodec_1find_1decoder
     (JNIEnv *env, jobject obj, jint codecID)
     {
@@ -123,6 +124,7 @@ build_android.sh的内容如下
 		return -1;
 	}
     }
+```
 ***
 *编写Android.mk，内容如下：	
     LOCAL_PATH := $(call my-dir)
